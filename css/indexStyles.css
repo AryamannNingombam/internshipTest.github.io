@@ -1,8 +1,37 @@
 body,html{
   margin:0;
 }
+html{
+  scroll-behavior: smooth;
+}
+#main-navbar{
 
+  position:fixed;
+  z-index:1;
+  margin:0;
+  top:0;
+  height : 70px;
+  width:100%;
+  display : flex;
 
+  justify-content : left;
+}
+.navbar-icon{
+  margin:0 1rem;
+}
+#navbar-list{
+  list-style: none;
+  display:flex;
+  justify-content : center;
+}
+#navbar-list a{
+  margin:0 1rem;
+  font-size:24px;
+}
+#technical-section,#non-technical-section{
+  margin:20px 0;
+  height:500px;
+}
 
 #particles-js {
 
@@ -70,30 +99,21 @@ position: fixed;
 
 #mainTitle{
   font-size : 16vh;
-  color : white;
 
 }
 
 #particle-js-area{
   display: grid;
-  grid-template-areas:'text image' 'text image''text image''text image''text image''text image''text image' 'text image' 'text image' 'text image' 'pointer pointer';
+  grid-template-areas:'text image' 'text image''text image''text image''text image''text image''text image' 'text image' 'text image' 'text image';
   grid-gap:5px;
 
 
 }
-#pointer-area{
-  grid-area:pointer;
 
-  text-align:center;
-}
 #go-down-pointer{
-  color : white;
   font-size : 11vh;
   position:absolute;
   bottom:0;
-}
-#personalize-your-theme{
-  color : white;
 }
 
 
@@ -106,6 +126,7 @@ position: fixed;
 
 #social-media-section{
   text-align:center;
+  border-radius: 40px;
 }
 
 .s-handle{
@@ -128,24 +149,8 @@ position: fixed;
 }
 #aryamann-description{
 
-  height:900px;
+padding:20px;
 
-
-
-  display: grid;
-  grid-template-areas:
-
-    'about technical'
-    'about technical'
-    'about technical'
-    'about technical'
-  'about non-technical'
-  'about non-technical'
-  'about non-technical'
-  'about non-technical';
-
-  grid-gap: 50px;
-  padding:50px;
 
 
 }
@@ -158,13 +163,21 @@ position: fixed;
   grid-area:non-technical;
 
 
+
 }
+
+
+
 #about-section{
   grid-area: about;
 
 }
-#about-section >h1{
-  font-size: 10vh;
+.description-box{
+  padding:10px;
+
+}
+.description-box>h1{
+  font-size:8vh;
 }
 
 
@@ -177,4 +190,14 @@ position: fixed;
   text-align: center;
   }
 
+#about-para{
+  padding:30px;
+  font-size:30px;
+}
 
+#skillset-section{
+  display:grid;
+  grid-template-areas:'technical non-technical' ;
+  grid-gap:10px;
+
+}

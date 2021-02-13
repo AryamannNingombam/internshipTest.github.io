@@ -1,16 +1,16 @@
 #social-media-section{
-  border-radius:40px;
-  box-shadow: -35px 21px 55px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -35px 21px 55px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -35px 21px 55px 0px rgba(0,0,0,0.75);
   background: #06cd55;
-
-
+}
+#mainTitle{
+  color : white;
+}
+#personalize-your-theme{
+  color : white;
 }
 
 #aryamann-description{
   background-color: #016422;
-  border-top:4px solid black;
+  border-top:4px solid white;
 }
 .box-styling{
   box-shadow: -32px -23px 30px -16px rgba(0,0,0,0.43);
@@ -18,7 +18,14 @@
   -moz-box-shadow: -32px -23px 30px -16px rgba(0,0,0,0.43);
   background-color: #1e9847;
   color:white;
-  border:3px solid black;
+  border:3px solid white;
 
 }
+#main-navbar{
+  background-color:#14B060;
 
+}
+#navbar-list a{
+  color:white;
+  text-decoration: none;
+}

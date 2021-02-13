@@ -72,5 +72,3 @@ document.getElementById("red-dot").addEventListener('click',(e)=>{
 
 
 
-
-
