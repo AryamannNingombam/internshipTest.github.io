@@ -17,12 +17,17 @@ const colors = {
 
 
 function loadMode(mode){
+  const previousMode = localStorage.getItem('theme');
   const pageToLoad = './json/particlejs-config(' + mode + ').json';
   localStorage.setItem('theme',mode);
   currentTheme = mode;
   document.body.style.backgroundColor = colors[mode];
   document.getElementById('secondary-stylesheet').href=`./css/indexStyles(${mode}).css`
 
+  if (previousMode){
+    document.getElementById(themeToDots[previousMode]).className = 'dot shrunk';
+  }
+  document.getElementById(themeToDots[mode]).className = 'dot selected';
 
   particlesJS.load('particles-js',pageToLoad,()=>{
 
